@@ -11,12 +11,11 @@ int main(){
 	cout<<"Indique el coeficiente c de la ecuacion cuadratica: ";
 	cin>>c;
 	Discriminante = sqrt(pow(b,2) - 4*(a*c));
+	X1 = (-1*b + sqrt(pow(b,2) - 4*(a*c)))/ 2*a;
+	X2 = (-1*b - sqrt(pow(b,2) - 4*(a*c)))/ 2*a;
 	if (Discriminante > 0){
-		X1 = (-1*b + sqrt(pow(b,2) - 4*(a*c)))/ 2*a;
-		X2 = (-1*b - sqrt(pow(b,2) - 4*(a*c)))/ 2*a;
 		cout<<"Las raices son: "<<X1<<" "<<X2<<endl;
 	} else if (Discriminante == 0){
-		X1 = (-1*b + sqrt(pow(b,2) - 4*(a*c)))/ 2*a;
 		cout<<"Las raices son iguales: "<<X1<<endl;
 	} else {
 		cout<<"No existen raices reales";
